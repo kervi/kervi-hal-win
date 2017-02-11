@@ -1,0 +1,9 @@
+setup.cfg
+kervi_hal_win/__init__.py
+kervi_hal_win/gpio_driver.py
+kervi_hal_win/i2c_driver.py
+kervi_hal_win.egg-info/PKG-INFO
+kervi_hal_win.egg-info/SOURCES.txt
+kervi_hal_win.egg-info/dependency_links.txt
+kervi_hal_win.egg-info/requires.txt
+kervi_hal_win.egg-info/top_level.txt
