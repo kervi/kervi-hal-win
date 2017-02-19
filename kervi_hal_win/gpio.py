@@ -14,7 +14,7 @@ class GPIODriver(IGPIODeviceDriver):
         print("define pwm")
 
     def set(self, pin, state):
-        print("set pin low")
+        print("set pin", state)
 
     def get(self, pin):
         print("get pin")
