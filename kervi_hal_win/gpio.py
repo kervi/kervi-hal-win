@@ -1,6 +1,11 @@
 from kervi.utility.hal.gpio import IGPIODeviceDriver
 
 class GPIODriver(IGPIODeviceDriver):
+
+    GPIO2 = 3
+    GPIO3 = 5
+    GPIO4 = 7
+
     def __init__(self):
         print("init win gpio driver")
 
@@ -20,10 +25,10 @@ class GPIODriver(IGPIODeviceDriver):
         print("get pin")
         return 0
 
-    def start_pwm(self, pin, duty_cycle, frequency=None):
+    def pwm_start(self, channel, duty_cycle=None, frequency=None):
         print("start pwm")
 
-    def stop_pwm(self, pin):
+    def pwm_stop(self, pin):
         print("stop pwm")
 
     def listen(self, pin, callback, bounce_time=0):
