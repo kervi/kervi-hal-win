@@ -1,4 +1,4 @@
-from kervi.utility.hal.i2c import II2CDeviceDriver
+from kervi.hal.i2c import II2CDeviceDriver
 
 class I2CDriver(II2CDeviceDriver):
     """

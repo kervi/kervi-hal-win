@@ -1,4 +1,4 @@
-from kervi.utility.hal.gpio import IGPIODeviceDriver
+from kervi.hal.gpio import IGPIODeviceDriver
 
 class GPIODriver(IGPIODeviceDriver):
 
