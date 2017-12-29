@@ -7,7 +7,8 @@ class GPIODriver(IGPIODeviceDriver):
     GPIO4 = 7
 
     def __init__(self):
-        print("init win gpio driver")
+        #print("init win gpio driver")
+        pass
 
     def define_as_input(self, pin):
         print("define pin in")
