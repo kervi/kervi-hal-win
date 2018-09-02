@@ -14,7 +14,8 @@ setup(
         "kervi/platforms/windows",
     ],
     install_requires=[
-        'psutil'
+        'psutil',
+        'inputs'
     ],
 
 )
