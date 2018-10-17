@@ -21,12 +21,7 @@ def get_user_inputs():
 
 def detect_devices():
     import inputs
-    input_devices = {
-        "keyboard": [],
-        "mouse": [],
-        "game_pad": [],
-        "other_device": []
-    }
+    input_devices = {}
     for device in inputs.devices:
         type = None
         if isinstance(device, inputs.Keyboard):
@@ -40,11 +35,18 @@ def detect_devices():
             type = "other_device"
 
         if type:
+            if not type in input_devices.keys():
+                input_devices[type] = []
             input_devices[type] += [{
                 "name": device.name,
                 "path": "?" #device.get_char_device_path()
             }]
     
+    import platform
     return {
+        "Platform": [{
+            "name": platform.system(),
+            "model": platform.release(),
+        }],
         "inputs": input_devices
     }
